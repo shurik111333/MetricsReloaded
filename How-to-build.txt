@@ -6,6 +6,7 @@
    На правой панели в разделе Project SDK нажать New -> Intellij Platform Plugin SDK
    В появившемся окне указать папку с установленой Intellij IDEA
 2) Добавить в SDK библиотеки плагинов
+   Установить плагин Scala, если не установлен (File -> Settings -> Plugins -> Install JetBrains plugin)
    File -> Project structure
    На левой панели в разделе Platform Settings выбрать SDKs
    Из списка справа выбрать созданную на первом шаге SDK
@@ -13,5 +14,9 @@
 		*idea_directory*\plugins\Kotlin\lib 	
 		*idea_directory*\plugins\Kotlin\kotlinc
 		*idea_directory*\plugins\Groovy\lib
+		*idea_directory*\plugins\JavaScriptLanguage\lib
+		*idea_directory*\plugins\CSS\lib
+		*idea_directory*\plugins\jsp\lib
+		*idea_settings_directory*\config\plugins\Scala\lib (*idea_settings_directory* можно узнать здесь: https://intellij-support.jetbrains.com/hc/en-us/articles/206544519-Directories-used-by-the-IDE-to-store-settings-caches-plugins-and-logs, путь до папки plugins указан для Windows 10, в других ОС он может отличаться)
 		
 3) Запустить Project Build
